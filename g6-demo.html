@@ -1,0 +1,34 @@
+<html>
+
+<head>
+  <title>g6-demo</title>
+  <script src="https://gw.alipayobjects.com/os/antv/pkg/_antv.g6-3.0.0/build/g6.js"></script>
+</head>
+
+<body>
+  <div id="container"></div>
+  <script>
+    const data = {
+      nodes: [{
+        id: 'node1',
+        x: 100,
+        y: 200
+      }, {
+        id: 'node2',
+        x: 300,
+        y: 200
+      }],
+      edges: [{
+        source: 'node1',
+        target: 'node2'
+      }]
+    };
+    const graph = new G6.Graph({
+      container: 'container',
+      width: 500,
+      height: 500
+    });
+  </script>
+</body>
+
+</html>
